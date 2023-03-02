@@ -37,6 +37,11 @@ UAH = input("Enter the amount to exchange UAH:")
 Total = int(UAH) / float(doll)
 print(round(Total, 2))
 
+a = 11
+b =  3
+c = a // b
+print(c)
+
 
 
 
