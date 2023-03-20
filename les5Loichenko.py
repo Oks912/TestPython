@@ -37,3 +37,5 @@ for word in text.split():
     dict_1[word] = text.split().count(word)
 for element in dict_1.items():
   print(element, end = '')
+
+
