@@ -13,7 +13,7 @@ elif random_Val >= 31 or random_Val <= 45:
 elif random_Val >= 46 or random_Val <= 59:
     print('Число в четвертій четверті')
 
-# Task3
+# Tasdk3
 n = random.randint(0, 2000)
 print("Random: ", n)
 cuma = 0
