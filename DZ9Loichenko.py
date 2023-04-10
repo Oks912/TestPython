@@ -9,7 +9,6 @@ with open("group_4.csv", 'w',newline='') as example:
     writer.writerows(new_list)
 
 print(new_list)
-
 new_list.append([['Oleksii', '2200'],
                  ["Viktoriar","1200"]])
 
