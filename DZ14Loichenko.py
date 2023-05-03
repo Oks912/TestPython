@@ -49,7 +49,7 @@ class Passenger:
         return f"name: {self.name}, destination: {self.destination}, place: {self.place}"
 
 
-train = Train("Express 1")
+train = Train("Express Харків Київ")
 
 # Додаємо вагони до поїзда
 train.add_car(TrainCar(0, 0)) #локоматив
@@ -63,10 +63,10 @@ train.add_station("Station 2")
 train.add_station("Station 3")
 
 # Додаємо пасажирів до поїзда
-train[0].add_passenger(Passenger("John Doe", "Station 3", 12))
-train[0].add_passenger(Passenger("Jane Smith", "Station 2", 47))
-train[1].add_passenger(Passenger("Bob Johnson", "Station 3", 54))
-train[2].add_passenger(Passenger("Alice Jones", "Station 1", 9))
+train[0].add_passenger(Passenger("Олег", "Харків", 12))
+train[0].add_passenger(Passenger("Ганна", "Полтава", 47))
+train[1].add_passenger(Passenger("Дмитро", "Харків", 54))
+train[2].add_passenger(Passenger("Оксана", "Київ", 9))
 
 # Вивод інформації про поїзд та вагони
 print(f"Train '{train.name}' has {len(train)} cars:")
