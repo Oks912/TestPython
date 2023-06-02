@@ -17,3 +17,22 @@ def driver():
 @pytest.fixture
 def dashboard(driver):
     yield Dashboard(driver)
+
+
+
+
+
+
+# Ініціалізуємо веб-драйвер
+driver = webdriver.Chrome()
+
+# Створюємо сторінку пошуку і передаємо їй драйвер
+search_page = SearchPage(driver)
+
+# Використовуємо локатори і методи сторінки
+search_page.search("HP laptop")
+
+# Отримуємо результати пошуку
+results = search_page.results
+for result in results:
+    print(result.text)
